@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src = "js-projet.js"> async </script>
+    <link rel="stylesheet" href="css.css">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <div id="bloc_de_page">
+        <header>
+            <div id="titre_principal">
+                <div id="logo">
+                    <img src="images/logo_aviation.jpg" alt="" class="icon_titre">
+                    <h1 id="titre">Bienvenue à l'aero_club de Tunisie</h1>
+                    <img src="images/logo_aviation.jpg" alt="" class="icon_titre">
+                </div>
+                <h2 id="titre_club">AERO WINGS</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="aderants.html">Aderants</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="evenements.html">Evenements</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <aside>
+                <h1>À propos de l'aero_club</h1>
+                <div id="menu_club">
+                    <ul>
+                        <li><a href="historique.html#histoire">Historique</a></li>
+                        <li><a href="historique.html#appareils">Nos_Appareils</a></li>
+                        <li><a href="historique.html#Reglement_internes">Reglement_internes Internes</a ></li>
+                    </ul>
+                </div>
+                <div id="social_media">
+                    <ul>
+                        <li><a href=""><img src="images/facebook.jpg" alt="Facebook"></a></li>
+                        <li><a href=""><img src="images/twitter.jpg" alt="Twitter"></a></li>
+                        <li><a href=""><img src="images/instagram.jpg" alt="intagram"></a></li>
+                        <li><a href=""><img src="images/youtube.jpg" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </aside>
+            <article id="inscription">
+                <div>
+                    <form name="form1">
+                        <h2 align="center">Inscription Nouveau Adérant</h2>
+                        <fieldset>
+                            <legend>Informations personnelles</legend>
+                        <table id="table_inscription1">
+                            <tr>
+                                <th >Nom: *</th>
+                                <td ><input type="text" size="20" name="nom" placeholder="votre nom de famille" class="input_text"></td >
+                            </tr>
+                            <tr>
+                                <th >Prenom: *</th class="th_table_inscription">
+                                <td ><input type="text" size="20" name="prenom" placeholder="votre prenom" class="input_text"></td >
+                            </tr>
+                            <tr>
+                                <th >Date de naissance:</th >
+                                <td ><input type="date" size="20" name="date_naissance" placeholder="votre date de naissance" class="input_text"></td >
+                            </tr>
+                            <tr>
+                                <th >Sexe:</th >
+                                    <td><input type="radio" name="sexe" type="homme"checked> Homme
+                                    <input type="radio" name="sexe" type="femme" > Femme</td>
+                            </tr>
+                            <tr>
+                                <th >Civilité:</th >
+                                    <td><input type="radio" name="civilite" type="monsieur"checked>Mr.
+                                    <input type="radio" name="civilite" type="madame" >Mme.
+                                    <input type="radio" name="civilite" type="mademoiselle" >Mlle.</td>
+                            </tr>
+                            <tr>
+                                <th >ADRESSE:</th >
+                                <td ><textarea rows="10" cols="20" placeholder="votre addresse" name="addresse" class="input_text"></textarea></td >
+                            </tr>
+                            <tr>
+                                <th >Zip code:</th >
+                                <td ><input type="number" placeholder="zipcode" name="zip code" class="input_text"></td >
+                            </tr>
+                            <tr>
+                                <th >E_mail: *</th >
+                                <td ><input type="email" size="20" name="email" placeholder="votre mail" class="input_text"></td >
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informations technique</legend>
+                        <table id="table_inscription2">
+                            <tr>
+                                <th>Vous Etes:</th>
+                                <td ><input type="checkbox" name="qualification" type="pilote_helicopter" checked>Pilote d'hélicoptère
+                                    <input type="checkbox" name="qualification" type="pilote_transport">Pilote de transport<br>
+                                    <input type="checkbox" name="qualification" type="pilote_chasse">Pilote de chasse
+                                    <input type="checkbox" name="qualification" type="mecanique_avion">Mécanique avion</td>
+                            </tr>
+                            <tr>
+                                <th>Nombre d'heures</th>
+                                <td><input type="number" name="total_vol"></td>
+                            </tr>
+                            <tr>
+                                <th>N° carte professionnel</th>
+                                <td><input type="number" name="carte_professionnel"></td>
+                            </tr>
+                            <tr>
+                                <th  >Niveau en vol</th>
+                                <td><input type="range" name="niveau_vol" min="0" max="100"></td>
+                            </tr>
+                            <tr>
+                                <th >Votre motivation:</th >
+                                <td ><textarea rows="10" cols="20" placeholder="votre addresse" name="addresse" 
+                                    class="input_text" placeholder="votre motivation pour s'inscrire dans notre club"></textarea></td >
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <input type="submit" name="submit" value="S'inscrire" class="bouton" onClick='verifier()'>
+                    <input type="reset" name="effacer" value="Annuler" class="bouton">
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div id="adresse">
+                <h1>NOTRE ADRESSE</h1>
+                <p>CITE NASSER ARIANA</p>
+                <p>Tel: (216)71589898</p>
+                <p>Fax: (216)71589554</p>
+            </div>
+            <div id="nos_amis">
+                <h1>ADRESSES DES AMIS DU CLUB</h1>
+                <ul>
+                    <li><a href="https://www.sosaglidingclub.com/" class="lien_amis"><img src="images/sosa.png" alt="" class="logo_amis"><br>Gliding Club</a></li>
+                    <li><a href="https://kamloopsflyingclub.com/" class="lien_amis"><img src="images/kamloops.jpg" alt="" class="logo_amis"><br>Kamloops Flying Club</a></li>
+                    <li><a href="http://aeroclub.com/" class="lien_amis"><img src="images/aeroclub_france.png" alt="" class="logo_amis"><br>Aéro-Club de France</a></li>
+                    <li><a href="https://www.sabena-aeroclub.be/fr/" class="lien_amis"><img src="images/sabena_aero_club.png" alt="" class="logo_amis"><br>Sabena Aeroclub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
